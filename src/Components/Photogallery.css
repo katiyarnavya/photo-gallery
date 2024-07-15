@@ -1,0 +1,25 @@
+.photo-gallery {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 20px;
+    margin: 20px;
+  }
+   
+  .photo-gallery a {
+    flex: 0 1 calc(33.33% - 20px);
+    border-radius: 10px;
+    overflow: hidden;
+  }
+   
+  .photo-gallery img {
+    display: block;
+    width: 100%;
+    border-radius: 10px;
+    transition: transform 0.3s ease-in-out;
+  }
+   
+  .photo-gallery img:hover {
+    transform: scale(1.1);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Add a shadow */
+  }
